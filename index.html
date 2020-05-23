@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ID=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<title>Music Translator Online</title>
+	<link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+	
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="container">
+	  <h1 class="header">Music Translator Online</h1>
+	  <p>Choose one:</p>
+	  <form role="form">
+		<div class="radioContainer">
+            <div class="radioDiv">
+              <input type="radio" class="radio">
+              <label>Western to Carnatic</label>
+            </div>
+            
+            <div class="radioDiv">
+              <input type="radio" class="radio">
+              <label>Carnatic to Western</label>
+            </div>      
+        </div>
+
+		<div>
+		  <textarea rows="10" cols = "30" placeholder="Enter original notes..." class="textarea"></textarea>
+		</div>	
+		
+		<div>
+			<button type="button" value="Submit" class="button">Translate</button> 
+		</div>
+
+        <div>
+          <textarea rows="10" cols = "30" placeholder="Translated notes..." class="textarea" disabled></textarea>
+        </div>
+		
+	  </form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+	box-sizing:border-box;
+}
+
+html{
+	background-color: #D9CDD2;
+	font-family: 'Roboto Slab', serif;
+	margin: 10px;	
+	text-align:center;
+	width:100%;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header {
+	letter-spacing: 0.2em;
+	text-align:center;
+
+}
+
+.radio{
+	flex-direction: row;
+	margin: 5px 5px 5px 5px;
+}
+
+.radioContainer{
+	border:none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	break-before: always;
+	margin: 5px 5px 5px 5px;
+}
+
+.radioDiv{
+	margin: 0 1.81em 0 0;
+}
+
+.textarea {
+	width: 100%;
+	margin:  5px 5px 5px 5px;
+	padding:  5px 5px 5px 5px;
+}
+
+.button {
+	margin:  5px 5px 5px 5px;
+}
