@@ -2,15 +2,15 @@
 	box-sizing:border-box;
 }
 
-html{
+html {
 	background-color: #D9CDD2;
 	font-family: 'Roboto Slab', serif;
-	margin: 10px;	
+	margin: 10px 10px 10px 10px;	
 	text-align:center;
 	width:100%;
 }
 
-body{
+body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -22,12 +22,17 @@ body{
 
 }
 
-.radio{
+.subheader {
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.radio {
 	flex-direction: row;
 	margin: 5px 5px 5px 5px;
 }
 
-.radioContainer{
+.radioContainer {
 	border:none;
 	display: flex;
 	flex-direction: row;
@@ -36,7 +41,7 @@ body{
 	margin: 5px 5px 5px 5px;
 }
 
-.radioDiv{
+.radioDiv {
 	margin: 0 1.81em 0 0;
 }
 
@@ -48,4 +53,15 @@ body{
 
 .button {
 	margin:  5px 5px 5px 5px;
+	font-family: 'Roboto Slab', serif; 
+}
+
+@media (max-width: 425px) {
+	.radio {
+		flex-direction: column;
+	}
+
+	.radioContainer {
+		flex-direction: column;
+	}
 }

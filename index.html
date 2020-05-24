@@ -19,34 +19,36 @@
 
 	<div class="container">
 	  <h1 class="header">Music Translator Online</h1>
+	  <h3 class="subheader">A little app made by a little girl who likes to play a little music</h3>
 	  <p>Choose one:</p>
 	  <form role="form">
 		<div class="radioContainer">
             <div class="radioDiv">
-              <input type="radio" class="radio">
-              <label>Western to Carnatic</label>
+              <input type="radio" name="translation" value="toCarnatic" id="toCarnatic" class="radio">
+              <label for="toCarnatic">Western to Carnatic</label>
             </div>
             
             <div class="radioDiv">
-              <input type="radio" class="radio">
-              <label>Carnatic to Western</label>
+              <input type="radio" name="translation" value="toWestern" id="toWestern"  class="radio">
+              <label for="toWestern">Carnatic to Western</label>
             </div>      
         </div>
 
 		<div>
-		  <textarea rows="10" cols = "30" placeholder="Enter original notes..." class="textarea"></textarea>
+		  <textarea rows="10" cols = "30" placeholder="Enter original notes..." class="textarea" id="original"></textarea>
 		</div>	
 		
 		<div>
-			<button type="button" value="Submit" class="button">Translate</button> 
+			<button type="button" value="Submit" class="button" onclick="saveAndChange()">Translate</button> 
 		</div>
 
         <div>
-          <textarea rows="10" cols = "30" placeholder="Translated notes..." class="textarea" disabled></textarea>
+          <textarea rows="10" cols = "30" placeholder="Translated notes..." class="textarea" id="changed" disabled></textarea>
         </div>
 		
 	  </form>
 	</div>
 
 </body>
+<script src="main.js"></script>
 </html>
