@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="ID=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<div id="logoContainer">
+		<img src="logo.png" alt="Logo" href="index.html" id="logo">
+	</div>
 	<title>Music Translator Online</title>
 	<link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -18,7 +21,7 @@
 <body>
 
 	<div class="container">
-	  <h1 class="header">Music Translator Online</h1>
+	  <h1 class="header" href="file:///C:/xampp/htdocs/MusicTranslatorOnline/index.html">Notes Translator Online</h1>
 	  <h3 class="subheader">A little app made by a little girl who likes to play a little music</h3>
 	  <p class="chooseOne">Choose one:</p>
 	  <form role="form">
@@ -33,6 +36,9 @@
               <label for="toWestern">Carnatic to Western</label>
             </div>      
         </div>
+
+        <p class="directions">Western Notes: C D E F G A B</p>
+        <p class="directions">Carnatic Notes: S R1 R2 G1 G2 M1 M2 P D1 D2 N1 N2 S</p>
 
 		<div>
 		  <textarea rows="10" cols = "30" placeholder="Enter original notes..." class="textarea" id="original"></textarea>
