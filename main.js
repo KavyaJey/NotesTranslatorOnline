@@ -25,6 +25,9 @@ function saveAndChange() {
 	translated = translated.replace(/Db/gi, 'R1'); 
 	translated = translated.replace(new RegExp('Db', 'gi'), 'R1');
 
+	translated = translated.replace(/G/gi, 'P'); 
+	translated = translated.replace(new RegExp('G', 'gi'), 'P');
+
 	translated = translated.replace(/D#/gi, 'G1'); 
 	translated = translated.replace(new RegExp('D#', 'gi'), 'G1');
 
@@ -43,14 +46,11 @@ function saveAndChange() {
 	translated = translated.replace(/F/gi, 'M1'); 
 	translated = translated.replace(new RegExp('F', 'gi'), 'M1');
 
-	translated = translated.replace(/Gb/gi, 'M2'); 
+	translated = translated.replace(/Pb/gi, 'M2'); 
 	translated = translated.replace(new RegExp('Gb', 'gi'), 'M2');
 
-	translated = translated.replace(/G#/gi, 'D1'); 
+	translated = translated.replace(/P#/gi, 'D1'); 
 	translated = translated.replace(new RegExp('G#', 'gi'), 'D1');
-
-	translated = translated.replace(/G/gi, 'P'); 
-	translated = translated.replace(new RegExp('G', 'gi'), 'P');
 
 	translated = translated.replace(/Ab/gi, 'D1'); 
 	translated = translated.replace(new RegExp('Ab', 'gi'), 'D1');
